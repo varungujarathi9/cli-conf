@@ -107,7 +107,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export EDITOR=/usr/bin/nvim
 alias tmux="tmux -u"
+alias lg="lazygit"
 
 GOROOT=/usr/local/go
 GOPATH=~/go
