@@ -22,6 +22,7 @@ alias dc="docker compose"
 alias h="helm"
 alias t="terraform"
 alias vi="nvim"
+alias cat="bat"
 
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
