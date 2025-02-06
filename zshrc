@@ -108,41 +108,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export EDITOR=/usr/bin/nvim
-alias tmux="tmux -u"
+
 alias lg="lazygit"
 
-GOROOT=/usr/local/go
-GOPATH=~/go
-PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-
-export PATH="$HOME/.tmuxifier/bin:$PATH"
-eval "$(tmuxifier init -)"
-
-lazynvm() {
-  unset -f nvm node npm yarn
-  export NVM_DIR=~/.nvm
-  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-}
-
-nvm() {
-  lazynvm 
-  nvm $@
-}
-
-node() {
-  lazynvm
-  node $@
-}
-
-npm() {
-  lazynvm
-  npm $@
-}
-
-yarn() {
-  lazynvm
-  npm $@
-}
 
 unset '_comps[sh]'
 
