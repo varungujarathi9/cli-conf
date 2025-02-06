@@ -4,4 +4,5 @@ Config files for various CLI tools like Tmux, Zsh, Wezterm etc
 ## Tools to install
 - lazygit
 - kubectl
-- 
+- bat
+- fzf (fzf with cd)
