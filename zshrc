@@ -9,8 +9,6 @@ fi
 
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
-
 
 export EDITOR=/usr/bin/nvim
 
