@@ -8,3 +8,5 @@ Config files for various CLI tools like Tmux, Zsh, Wezterm etc
 - bat
 - fzf (fzf with cd)
 - zsh autosuggestions
+- zsh autocomplete
+- 
