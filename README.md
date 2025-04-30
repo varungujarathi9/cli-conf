@@ -12,4 +12,6 @@ Config files for various CLI tools like Tmux, Zsh, Wezterm etc
 - zsh-syntax-highlighting
 
 # Git pretty log
+```
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
+```
