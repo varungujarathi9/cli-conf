@@ -21,6 +21,7 @@ alias h="helm"
 alias t="terraform"
 alias vi="nvim"
 alias cat="bat"
+alias m="make"
 
 source <(fzf --zsh) # install fzf keybindings
 
