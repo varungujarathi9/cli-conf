@@ -23,6 +23,9 @@ alias vi="nvim"
 alias cat="bat"
 alias m="make"
 
+alias ls='eza -l -a --icons --group-directories-first'
+
+
 source <(fzf --zsh) # install fzf keybindings
 
 function fcd() {
