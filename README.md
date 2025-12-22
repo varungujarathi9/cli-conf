@@ -10,6 +10,7 @@ Config files for various CLI tools like Tmux, Zsh, Wezterm etc
 - zsh autosuggestions
 - zsh autocomplete
 - zsh-syntax-highlighting
+- eza
 
 # Git pretty log
 ```
