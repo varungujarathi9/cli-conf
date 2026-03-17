@@ -63,3 +63,23 @@
 - **Simplicity First:** Make every change as simple as possible. Impact minimal code.
 - **No Laziness:** Find root causes. No temporary fixes. Senior developer standards.
 - **Minimal Impact:** Changes should only touch what's necessary. Avoid introducing bugs.
+
+## Keeping CLAUDE.md Up to Date
+
+**Important:** This file should be updated frequently as the project evolves. Whenever significant context is learned — job timings, data size characteristics, debugging insights, new patterns, config changes — it should be recorded here so future sessions start with accurate context.
+
+
+
+## Working Style
+
+**Ask questions liberally.** This codebase involves complex infrastructure, data pipelines, and ML systems where wrong assumptions are costly (long Dataproc jobs, GCP costs, data correctness). Before acting on ambiguous tasks:
+- Ask as many clarifying questions as needed — more questions is always better than a wrong assumption
+- Confirm input/output paths, modes (training vs inference), environment (prod vs staging), and data characteristics before submitting jobs
+- When debugging, ask about observed symptoms before proposing fixes
+- When tuning parameters, ask about cluster specs, data sizes, and past failures first
+
+**Fix bugs carefully.** A bad fix is worse than no fix — a failed Dataproc job wastes hours.
+- Before applying a fix, think through second-order effects: does this change break other code paths, other modes (training vs inference), or downstream jobs?
+- Validate the solution before running a full job — use `sample_fraction: 0.01` in the config to run a quick end-to-end test on 1% of data first
+- If the fix is non-trivial, explain the reasoning and ask for confirmation before submitting
+
